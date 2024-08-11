@@ -81,7 +81,7 @@ function App() {
   const [playerJoined, setPlayerJoined] = useState(1);
   const [quickMessage, setquickMessage] = useState("")
 
-  const socket = useMemo(() => io("https://monopolybackend.vercel.app"), []);
+  const socket = useMemo(() => io("https://monopolybackend-649pmgo8c-shailesh-bishts-projects.vercel.app/"), []);
 
   socket.on("connect", () => {
     console.log("Connected to server");
